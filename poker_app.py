@@ -12,7 +12,7 @@ preflop_selector = st.sidebar.radio('Opciones', ('OR','ROL','3Bet-Call','Call3Be
 if preflop_selector == 'OR':
     open_raise = Image.open('OPEN_RAISE.png')
     st.image(open_raise, use_column_width=500)
-    st.pyplot()
+    
     
 if preflop_selector == 'ROL':
     st.header('ROL: Desde BB')
@@ -45,7 +45,7 @@ if preflop_selector == 'ROL':
     rol_bar9 = st.beta_expander('ROL: BTN vs CO-EP (FISH)')
     btn_rol9 = Image.open('ROL_BTNvsCO-EP(FISH).png')
     rol_bar9.image(btn_rol9, use_column_width=500)
-    st.pyplot()
+    
     
 if preflop_selector == '3Bet-Call':
     st.header('3BET-CALL: Desde BB')
@@ -86,7 +86,7 @@ if preflop_selector == '3Bet-Call':
     tbet_bar10 = st.beta_expander('3BET-CALL: MP vs UTG')
     tbet10 = Image.open('3BET-CALL_MPvsEARLY.png')
     tbet_bar10.image(tbet10, use_column_width=500)
-    st.pyplot()
+    
 
 if preflop_selector == '3Bet-Call-Multiway':
     st.header('3BET-CALL: Desde BB')
@@ -122,7 +122,7 @@ if preflop_selector == '3Bet-Call-Multiway':
     tmbet_bar9 = st.beta_expander('3BET-CALL-MULTIWAY: BTN vs MP vs UTG')
     tmbet9 = Image.open('3BET-CALL_MULTIWAY_BTNvsMPvsUTG.png')
     tmbet_bar9.image(tmbet9, use_column_width=500)
-    st.pyplot()
+    
     
 if preflop_selector == 'Cold4Bet':
     st.header('COLD4BET: Desde BB')
@@ -170,7 +170,7 @@ if preflop_selector == 'Cold4Bet':
     coldbet_bar13 = st.beta_expander('IP COLD4BET: CO vs MP vs UTG')
     coldbet13 = Image.open('COLD4BET_COvsMPvsUTG.png')
     coldbet_bar13.image(coldbet13, use_column_width=500)
-    st.pyplot()
+   
 
 if preflop_selector == 'VS Cold4Bet':
     st.header('Desde SB')
@@ -211,4 +211,4 @@ if preflop_selector == 'Call3Bet-4Bet':
     call3bet_bar4 = st.beta_expander('OOP: VS 4.8%')
     call3bet4 = Image.open('CALL3BETvs4.8%_OOP.png')
     call3bet_bar4.image(call3bet4, use_column_width=500)
-    st.pyplot()
+    
