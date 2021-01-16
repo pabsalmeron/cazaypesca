@@ -2,7 +2,7 @@ from PIL import Image
 import streamlit as st
 
 
-st.beta_set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 st.title('Caza y Pesca')
 
 st.sidebar.header('SPOTS')
